@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-row">
+        <div class="all-inputs">
+          <div class="headings">
+            <h1>Enter Your Parking Details</h1>
+          </div>
+  
+          <form id="searching">
+            <label for="Vehicle">Search Vehicles </label>
+            <input type="search" id="search" placeholder="Search" />
+          </form>
+          <form id="submitting">
+            <div class="input-group2">
+              <label for="vehNum">Vehicle Number:</label>
+              <input type="text" id="vehNum" placeholder="UP-11-AP-0000" />
+            </div>
+            <div class="input-group">
+              <label for="Vehicle">Vehicle Type:</label>
+              <select id="Vehicle" name="Vehicle" required>
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+              </select>
+            </div>
+           
+            <button type="submit" id="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="second-row">
+        <div class="parking-lot">
+          <div class="headings">
+            <h1>Parking Lots</h1>
+          </div>
+          <h1 class="lots">Only 100 vehicles can fit in this parking lot</h1>
+          <div class="results">
+            <!-- all vechicle information shown here  -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="animee.js"></script>
+  </body>
+</html>
